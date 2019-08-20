@@ -35,23 +35,27 @@ document.querySelector('.btn-roll').addEventListener('click', function(){
     diceDom.src = 'dice-' + dice + '.png';
 
     // 3. update round score if the number isnt 1
+    if (dice !== 1) {
+        // 1. add score
+        roundScore += dice;
+        document.querySelector('#current-' + activePlayer).textContent = roundScore;
+
+        
+    } else {
+        roundScore = 0;
+        document.getElementById('current-' + activePlayer).textContent = roundScore;
+        
+        activePlayer === 0 ? activePlayer = 1 : activePlayer = 0;
+        
+        document.querySelector('.player-0-panel').classList.toggle('active');
+        document.querySelector('.player-1-panel').classList.toggle('active');
+
+        document.querySelector('.dice').style.display = 'none';
+    }
 });
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-// document.querySelector('#current-' + activePlayer).textContent = dice;
 // document.querySelector('#current-' + activePlayer).innerHTML = '<em>' + dice + '</em>';
 
 // var x = document.querySelector('#score-0').textContent;
