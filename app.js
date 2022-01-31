@@ -27,7 +27,7 @@ function init() {
     document.querySelector('.player-1-panel').classList.remove('winner');
 
     document.querySelector('.player-0-panel').classList.add('active');
-    
+
     document.getElementById('score-0').textContent = '0';
     document.getElementById('score-1').textContent = '0';
 
@@ -40,12 +40,12 @@ function init() {
 
 }
 
-document.querySelector('.btn-roll').addEventListener('click', function(){
+document.querySelector('.btn-roll').addEventListener('click', function () {
 
     if (gamePlay) {
         var dice, diceDom, previousRoll;
         diceDom = document.querySelector('.dice');
-        
+
 
         // 1. random no.
         dice = Math.floor(Math.random() * 6) + 1;
@@ -74,7 +74,7 @@ document.querySelector('.btn-roll').addEventListener('click', function(){
     }
 });
 
-document.querySelector('.btn-hold').addEventListener('click', function(){
+document.querySelector('.btn-hold').addEventListener('click', function () {
 
     if (gamePlay) {
         // 1. add current score to player total score
@@ -84,7 +84,7 @@ document.querySelector('.btn-hold').addEventListener('click', function(){
         document.getElementById('score-' + activePlayer).textContent = scores[activePlayer];
 
         // 3. check if game is won
-        if (scores[activePlayer] >= 20){
+        if (scores[activePlayer] >= 20) {
 
             gamePlay = false;
 
@@ -92,16 +92,16 @@ document.querySelector('.btn-hold').addEventListener('click', function(){
             document.querySelector('.dice').style.display = 'none';
 
             document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
-            document.querySelector('.player-' + activePlayer + '-panel').classList.remove('active');        
+            document.querySelector('.player-' + activePlayer + '-panel').classList.remove('active');
 
-        } else {                
+        } else {
             togglePlayer();
         }
     }
-    
+
 });
 
-function togglePlayer(){
+function togglePlayer() {
     roundScore = 0;
     document.getElementById('current-' + activePlayer).textContent = roundScore;
 
