@@ -22,14 +22,11 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/brianmuturi2/Tours-website-template">
-    <img src="img/favicon.png" alt="Logo" width="80" height="80">
-  </a>
 
-<h3 align="center">Tours website</h3>
+<h3 align="center">Pig game</h3>
 
   <p align="center">
-    A website showcasing tours packages.
+    A javascript pig game
     <br />
     <!--
     <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
@@ -76,7 +73,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-A website showcasing tours packages.
+A javascript pig game
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -101,24 +98,15 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-* node
-* npm
+* Browser
   
 ### Installation
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/brianmuturi2/Tours-website-template.git
+   git clone https://github.com/brianmuturi2/pig-game.git
    ```
-2. Install NPM packages
-   ```sh
-   npm install
-   ```
-3. Compile sass
-   ```sh
-   npm run compile:sass
-   ```
-4. Run index.html   
+2. Run index.html   
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -127,12 +115,7 @@ This is an example of how to list things you need to use the software and how to
 
 The following are the features implemented in the application.
 
-* Sass variables, imports & mixins
-* Media queries
-* Scss
-* CSS animations
-* A cutom columns layout
-* Sprite svg image
+* Dom manipulation with javascript
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
